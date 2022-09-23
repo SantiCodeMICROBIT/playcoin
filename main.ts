@@ -52,7 +52,7 @@ radio.setGroup(1)
 upgrade = 0
 PLAYCOIN = 0
 basic.showLeds(`
-    . . # # .
+    . # # # .
     # . # . #
     . . # . .
     . . # . .

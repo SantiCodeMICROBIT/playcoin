@@ -1,5 +1,5 @@
 <xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="RadioMessage" id="6:7c3Q2-QSOP9eJYWl1H">0message1</variable><variable id=".v-ZU(4anYq2XLr+uy(`">PLAYCOIN</variable><variable id="[9xBgq(by,`4zpf8Jq1u">group</variable><variable id="nYkQRGLm+Y^O!vpuR)2e">upgrade</variable></variables><block type="pxt-on-start" id="}e#;$FO:uS+=^d*,UiEK" x="-508" y="-586"><statement name="HANDLER"><block type="radio_set_group" id="1SN6w=],cb1c8,!xk(1c"><value name="ID"><shadow type="math_number_minmax" id="/AU,FEWTbfX~JvT~bcH`"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">1</field></shadow></value><next><block type="variables_set" id="fvOn87]kmBt`5o05a*eM"><field name="VAR" id="nYkQRGLm+Y^O!vpuR)2e">upgrade</field><value name="VALUE"><shadow type="math_number" id="yXhQ8@Gst1~EnnJ:;q($"><field name="NUM">0</field></shadow></value><next><block type="variables_set" id="l^|*J[T6J~[Yx0tSffL{"><field name="VAR" id=".v-ZU(4anYq2XLr+uy(`">PLAYCOIN</field><value name="VALUE"><shadow type="math_number" id="be-]PzmIr`[Nje-!zvaI"><field name="NUM">0</field></shadow></value><next><block type="device_show_leds" id="^(Dpr[u?tN[c=xR7L`Bh"><field name="LEDS">`
-        . . # # . 
+        . # # # . 
         # . # . # 
         . . # . . 
         . . # . . 
