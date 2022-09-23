@@ -51,7 +51,13 @@ let upgrade = 0
 radio.setGroup(1)
 upgrade = 0
 PLAYCOIN = 0
-let group = 0
+basic.showLeds(`
+    . . # # .
+    # . # . #
+    . . # . .
+    . . # . .
+    . . . . .
+    `)
 basic.forever(function () {
     if (PLAYCOIN < 0) {
         upgrade = 0
