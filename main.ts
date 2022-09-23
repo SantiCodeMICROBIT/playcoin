@@ -8,13 +8,34 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("P-COIN")
     basic.showNumber(PLAYCOIN)
 })
-input.onGesture(Gesture.ScreenDown, function () {
+input.onButtonPressed(Button.AB, function () {
     radio.sendString("" + (PLAYCOIN))
 })
+input.onButtonPressed(Button.B, function () {
+    PLAYCOIN += -50
+    upgrade = 1
+})
 input.onGesture(Gesture.Shake, function () {
-    PLAYCOIN += 1
+    if (upgrade == 0) {
+        PLAYCOIN += 1
+    } else if (upgrade == 1) {
+        PLAYCOIN += 5
+    }
 })
 let PLAYCOIN = 0
+let upgrade = 0
 radio.setGroup(1)
+upgrade = 0
 PLAYCOIN = 0
 let group = 0
+basic.forever(function () {
+    if (PLAYCOIN < 0) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+    }
+})
