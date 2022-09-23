@@ -30,12 +30,7 @@ PLAYCOIN = 0
 let group = 0
 basic.forever(function () {
     if (PLAYCOIN < 0) {
-        basic.showLeds(`
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            `)
+        upgrade = 0
+        basic.showString("DEBT")
     }
 })
