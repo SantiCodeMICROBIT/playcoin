@@ -9,13 +9,12 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(PLAYCOIN)
 })
 input.onGesture(Gesture.ScreenDown, function () {
-    radio.sendString("" + (group && PLAYCOIN))
+    radio.sendString("" + (PLAYCOIN))
 })
 input.onGesture(Gesture.Shake, function () {
     PLAYCOIN += 1
 })
-let group = 0
 let PLAYCOIN = 0
 radio.setGroup(1)
 PLAYCOIN = 0
-group = 0
+let group = 0
