@@ -16,8 +16,6 @@ input.onGesture(Gesture.Shake, function () {
 })
 let group = 0
 let PLAYCOIN = 0
+radio.setGroup(1)
 PLAYCOIN = 0
 group = 0
-basic.forever(function () {
-    radio.setGroup(1)
-})
