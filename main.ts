@@ -4,19 +4,47 @@ enum RadioMessage {
 radio.onReceivedNumber(function (receivedNumber) {
     basic.showString("RECIVED")
     basic.showString("" + (receivedNumber))
+    basic.showLeds(`
+        . # # # .
+        # . # . #
+        . . # . .
+        . . # . .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.A, function () {
     basic.showString("TOTAL")
     basic.showNumber(PLAYCOIN)
+    basic.showLeds(`
+        . # # # .
+        # . # . #
+        . . # . .
+        . . # . .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showString("SENT")
     radio.sendString("" + (PLAYCOIN))
+    basic.showLeds(`
+        . # # # .
+        # . # . #
+        . . # . .
+        . . # . .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.B, function () {
     PLAYCOIN += -50
     basic.showString("UPGRADED")
     upgrade = 1
+    basic.showLeds(`
+        . # # # .
+        # . # . #
+        . . # . .
+        . . # . .
+        . . . . .
+        `)
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
@@ -62,5 +90,12 @@ basic.forever(function () {
     if (PLAYCOIN < 0) {
         upgrade = 0
         basic.showString("DEBT")
+        basic.showLeds(`
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            . . . . .
+            `)
     }
 })
